@@ -1,0 +1,2 @@
+# rndgen
+Random generator lib
