@@ -6,4 +6,4 @@ namespace rndgen
 	T random();
 }
 
-#include "rndgen.cpp"
+#include "rndgen.tcc"
