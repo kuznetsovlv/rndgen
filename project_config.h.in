@@ -1,0 +1,3 @@
+#pragma once
+#define VERSION_MAJOR @rndgen_VERSION_MAJOR@
+#define VERSION_MINOR @rndgen_VERSION_MINOR@
