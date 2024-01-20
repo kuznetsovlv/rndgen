@@ -14,3 +14,12 @@ configure_file(project_config.h.in project_config.h)
 add_executable(rnd main.cpp)
 
 target_include_directories(rnd PUBLIC "${PROJECT_BINARY_DIR}")
+
+install(FILES  rndgen.h rndgen.tcc DESTINATION include)
+
+include(InstallRequiredSystemLibraries)
+set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/LICENSE")
+set(CPACK_PACKAGE_VERSION_MAJOR "${rndgen_VERSION_MAJOR}")
+set(CPACK_PACKAGE_VERSION_MINOR "${rndgen_VERSION_MINOR}")
+set(CPACK_SOURCE_GENERATOR "TGZ")
+include(CPack)
